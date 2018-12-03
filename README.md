@@ -1,6 +1,6 @@
-# cm-profile
+# Christy Moormann - UX Portfolio
 
-> A personal portfolio for Christy Moormann
+> A portfolio of work by Christy Moormann
 
 ## Build Setup
 
