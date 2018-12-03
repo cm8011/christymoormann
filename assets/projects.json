@@ -1,0 +1,91 @@
+[
+  {
+    "id" : "mortar-labs",
+    "info" : {
+      "name" : "Mortar Labs",
+      "industry" : "web application development",
+      "summary" : "Mortar Labs is a company that designs and develops websites and web applications.",
+      "description" : "My business partner joined forces for the greater good of the web application development industry and started Mortar Labs.  We seek to help people reach their maximum potential on the web, whether they are small businesses just getting started or entrepreneurs looking for a way to create and test an MVP.  We co-designed and developed our website and had an absolute blast doing it.",
+      "thumb" : "/images/mortar-labs-large.png"
+    }  
+  },
+  {
+    "id" : "ccli",
+    "info" : {
+      "name" : "CCLI Store",
+      "industry" : "music licensing",
+      "summary" : "CCLI, or Christian Copyright Licensing International, provides information and resources for churches and copyright owners around the world.",
+      "description" : "In order to expand services to a global audience, CCLI needed a way to allow customers to easily renew their annual subscription online.  As CCLI's full-time Senior UX Designer, I worked inside a small project team to design and produce a flow that allowed a targeted set of customers to view services that are due for renewal and pay online with a credit card.",
+      "thumb" : "/images/ccli-large.png"
+    }  
+  },
+  {
+    "id" : "moolplan",
+    "info" : {
+      "name" : "MOOLplan",
+      "industry" : "planning software",
+      "summary" : "moolPLAN is an online application designed to help couples build a stronger foundation together while planning for the future.",
+      "description" : "This online software was created to give couples an easy way to talk about values, goals, and finances.  I was hired as a consultant to create an onboarding process for new users.",
+      "thumb" : "/images/moolplan-small.png"
+    }  
+  },
+  {
+    "id" : "mhzoller",
+    "info" : {
+      "name" : "M.H. Zoller",
+      "industry" : "real estate & property management",
+      "summary" : "M.H. Zoller Company provides unique opportunities for investors and purchasers alike.",
+      "description" : "This company serves a diverse audience of home buyers, renters, and property investors. I enjoyed the challenge of creating an experience that showcased properties while connecting to the other facets that M.H. Zoller provides.",
+      "thumb" : "/images/mhzoller-small.png"
+    }  
+  },
+  {
+    "id" : "dovetail-joint-restaurant",
+    "info" : {
+      "name" : "Dovetail Joint Restaurant",
+      "industry" : "hospitality",
+      "summary" : "The Dovetail Joint Restaurant offers locally-sourced, made-from-scratch food.",
+      "description" : "Located in Richland, Washington, this restaurant is currently a mobile kitchen/food cart with plans to open a brick-and-mortar location in Richland's Uptown Shopping Center soon.",
+      "thumb" : "/images/dovetail-small.png"
+    }  
+  },
+  {
+    "id" : "recycle-beauty",
+    "info" : {
+      "name" : "Recycle Beauty",
+      "industry" : "non-profit organization",
+      "summary" : "Recycle Beauty has a unique mission - to connect people with excess beauty products with those in need.",
+      "description" : "It was an honor to create a one-page site, complete with sign-up form integration, for the founder of Recycle Beauty.  The Recycle Beauty website displays information about 'drop-off events' where busy people can conveniently donate their used and unused products.",
+      "thumb" : "/images/recycle-beauty-img.png"
+    }
+  },
+  {
+    "id" : "the-glass-onion-restaurant",
+    "info" : {
+      "name" : "The Glass Onion Restaurant",
+      "industry" : "hospitality",
+      "summary" : "The Glass Onion Restaurant features a distinctive menu made with seasonal, locally sourced ingredients.",
+      "thumb" : "/images/glassonion-small.png"
+    }  
+  },
+  {
+    "id" : "maren-mcgowan-photography",
+    "info" : {
+      "name" : "Maren McGowan Photography",
+      "industry" : "photography",
+      "summary" : "Maren McGowan specializes in film photography and writes photo essays on local businesses.",
+      "description" : "As an avid writer and lover of film-photography, Maren McGowan needed a place to showcase her work while also drawing in new business for her wedding and special occasion photography services.",
+      "thumb" : "/images/marenphoto-large.png"
+    }  
+  },
+  {
+    "id" : "county-wide-chaplaincy",
+    "info" : {
+      "name" : "County-Wide Chaplaincy",
+      "industry" : "non-profit organization",
+      "summary" : "County-Wide Chaplaincy is an organization dedicated to providing comfort and guidance at the scene of traumatic injury or death.",
+      "description" : "The Chaplaincy is a non-profit organization located in the Clark County district of Washington State.  Since they rely on donations, I set up a website to provide information on how to give to the Chaplaincy and learn more about chaplain services.",
+      "thumb" : "/images/chaplaincy-small.png"
+    }
+  }
+]
