@@ -51,6 +51,8 @@
 <script>
 
 import Image from '~/components/Image'
+import Project from '~/assets/projects'
+import addCommonFrontMatter from '~/plugins/addCommonFrontMatter'
 
 export default {
   components : {
@@ -66,6 +68,17 @@ export default {
       summary: "Recycle Beauty has a unique mission - to connect people with excess beauty products with those in need.",
       description: "It was an honor to create a one-page site, complete with sign-up form integration, for the founder of Recycle Beauty.  The Recycle Beauty website displays information about 'drop-off events' where busy people can conveniently donate their used and unused products."
     }
+  },
+  computed: {
+    path() {
+      return `${this.content.url}/projects/recycle-beauty`;
+    },
+    title() {
+      return `${this.content.name} | Recycle Beauty Project`;
+    }
+  },
+  head() {
+    return this.addCommonFrontMatter(this);
   }
 }
 </script>

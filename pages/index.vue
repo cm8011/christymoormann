@@ -97,6 +97,7 @@
 <script>
 import Image from '~/components/Image'
 import Projects from '~/assets/projects'
+import addCommonFrontMatter from '~/plugins/addCommonFrontMatter'
 
 export default {
   components: {
@@ -104,8 +105,21 @@ export default {
   },
   data () {
     return {
-      projects: Projects
+      projects: Projects,
+      description:
+        "Christy Moormann is a Senior UX Designer in the Portland, Oregon and Vancouver, Washington area with 8+ years of experience leading the design process from user research and design to code implementation and post-deployment analytics."
     }
+  },
+  computed: {
+    path() {
+      return `${this.content.url}`;
+    },
+    title() {
+      return `${this.content.name} | UX Design, Web Design, Front-End Development`;
+    }
+  },
+  head() {
+    return this.addCommonFrontMatter(this);
   },
   layout: 'home'
 }

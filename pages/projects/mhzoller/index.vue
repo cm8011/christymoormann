@@ -52,6 +52,8 @@
 <script>
 
 import Image from '~/components/Image'
+import Project from '~/assets/projects'
+import addCommonFrontMatter from '~/plugins/addCommonFrontMatter'
 
 export default {
   components : {
@@ -67,6 +69,17 @@ export default {
       summary: "M.H. Zoller Company provides unique opportunities for investors and purchasers alike.",
       description: "This company serves a diverse audience of home buyers, renters, and property investors. I enjoyed the challenge of creating an experience that showcased properties while connecting to the other facets that M.H. Zoller provides."
     }
+  },
+  computed: {
+    path() {
+      return `${this.content.url}/projects/mhzoller`;
+    },
+    title() {
+      return `${this.content.name} | M.H. Zoller Project`;
+    }
+  },
+  head() {
+    return this.addCommonFrontMatter(this);
   }
 }
 </script>

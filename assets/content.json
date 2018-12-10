@@ -1,0 +1,17 @@
+{
+  "name": "Christy Moormann",
+  "url": "https://christymoormann.com",
+  "city": "Camas",
+  "state": "WA",
+  "zip": "98607",
+  "phone": "503-888-8011",
+  "email": "christy@christymoormann.com",
+  "social": [
+    { "name" : "LinkedIn",
+      "link": "https://www.linkedin.com/in/christymoormann/",
+      "title" : "View Christy Moormann's LinkedIn Profile"
+    }
+  ],
+  "twitterHandle" : "@cmoormann",
+  "domainName": "christymoormann.com"
+}

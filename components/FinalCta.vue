@@ -4,7 +4,9 @@
       <div class="profile-image">
         <div></div>
         <div>
-          <div><v-image src="../images/profile-img.png" alt="" /></div>
+          <div class="img-center">
+            <v-image src="../images/profile-img.png" alt="" />
+          </div>
         </div>
         <div></div>
         <div></div>

@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'cm-profile',
+    title: 'Christy Moormann | UX Design, Web Design, Front-End Development',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A personal portfolio for Christy Moormann' }
+      { hid: 'description', name: 'description', content: 'Christy Moormann is a Senior UX Designer in the Portland, Oregon and Vancouver, Washington area with 8+ years of experience leading the design process from user research and design to code implementation and post-deployment analytics.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -23,7 +23,11 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#e01a4f' },
+  plugins: [
+    '~/plugins/addCommonFrontMatter',
+    '~/plugins/injectContent'
+  ],
   /*
   ** Build configuration
   */

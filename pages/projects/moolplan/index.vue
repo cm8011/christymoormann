@@ -52,6 +52,7 @@
 
 import Image from '~/components/Image'
 import Project from '~/assets/projects'
+import addCommonFrontMatter from '~/plugins/addCommonFrontMatter'
 
 export default {
   components : {
@@ -67,6 +68,17 @@ export default {
       summary: "moolPLAN is an online application designed to help couples build a stronger foundation together while planning for the future.",
       description: "This online software was created to give couples an easy way to talk about values, goals, and finances.  I was hired as a consultant to create an onboarding process for new users."
     }
+  },
+  computed: {
+    path() {
+      return `${this.content.url}/projects/moolplan`;
+    },
+    title() {
+      return `${this.content.name} | moolPLAN Project`;
+    }
+  },
+  head() {
+    return this.addCommonFrontMatter(this);
   }
 }
 </script>

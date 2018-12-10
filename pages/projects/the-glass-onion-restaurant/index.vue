@@ -52,6 +52,8 @@
 <script>
 
 import Image from '~/components/Image'
+import Project from '~/assets/projects'
+import addCommonFrontMatter from '~/plugins/addCommonFrontMatter'
 
 export default {
   components : {
@@ -67,6 +69,17 @@ export default {
       summary: "The Glass Onion Restaurant features a distinctive menu made with seasonal, locally sourced ingredients.",
       description: "Located near the beautiful Columbia Gorge, this restaurant needed a site that could be easily found and viewed from a mobile device for travelers looking for great places to dine."
     }
+  },
+  computed: {
+    path() {
+      return `${this.content.url}/projects/the-glass-onion-restaurant`;
+    },
+    title() {
+      return `${this.content.name} | The Glass Onion Restaurant Project`;
+    }
+  },
+  head() {
+    return this.addCommonFrontMatter(this);
   }
 }
 </script>

@@ -53,6 +53,7 @@
 
 import Image from '~/components/Image'
 import Project from '~/assets/projects'
+import addCommonFrontMatter from '~/plugins/addCommonFrontMatter'
 
 export default {
   components : {
@@ -68,6 +69,17 @@ export default {
       summary: "Maren McGowan specializes in film photography and writes photo essays on local businesses.",
       description: "As an avid writer and lover of film-photography, Maren McGowan needed a place to showcase her work while also drawing in new business for her wedding and special occasion photography services."
     }
+  },
+  computed: {
+    path() {
+      return `${this.content.url}/projects/maren-mcgowan-photography`;
+    },
+    title() {
+      return `${this.content.name} | Maren McGowan Photography Project`;
+    }
+  },
+  head() {
+    return this.addCommonFrontMatter(this);
   }
 }
 </script>

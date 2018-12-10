@@ -53,6 +53,7 @@
 
 import Image from '~/components/Image'
 import Project from '~/assets/projects'
+import addCommonFrontMatter from '~/plugins/addCommonFrontMatter'
 
 export default {
   components : {
@@ -68,6 +69,17 @@ export default {
       summary: "County-Wide Chaplaincy is an organization dedicated to providing comfort and guidance at the scene of traumatic injury or death.",
       description: "The Chaplaincy is a non-profit organization located in the Clark County district of Washington State.  Since they rely on donations, I set up a website to provide information on how to give to the Chaplaincy and learn more about chaplain services."
     }
+  },
+  computed: {
+    path() {
+      return `${this.content.url}/projects/county-wide-chaplaincy`;
+    },
+    title() {
+      return `${this.content.name} | County-Wide Chaplaincy Project`;
+    }
+  },
+  head() {
+    return this.addCommonFrontMatter(this);
   }
 }
 </script>

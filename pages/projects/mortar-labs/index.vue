@@ -2,7 +2,7 @@
   <section class="bg-white">
     <div class="content pt-3 pb-3">
     <div class="heading-with-button">
-      <h2>{{ title }}</h2>
+      <h2>Clients &amp; Projects</h2>
       <nuxt-link to="/projects" class="button">See all projects</nuxt-link>
     </div>
     <div class="divider mb-2"></div>
@@ -53,6 +53,7 @@
 
 import Image from '~/components/Image'
 import Project from '~/assets/projects'
+import addCommonFrontMatter from '~/plugins/addCommonFrontMatter'
 
 export default {
   components : {
@@ -60,7 +61,6 @@ export default {
   },
   data () {
     return {
-      title: "Clients & Projects",
       project: "Mortar Labs",
       industry: "web application design & development",
       date: "Aug 2018",
@@ -69,6 +69,17 @@ export default {
       summary: "Mortar Labs is a company that designs and develops websites and web applications.",
       description: "My business partner joined forces for the greater good of the web application development industry and started Mortar Labs.  We seek to help people reach their maximum potential on the web, whether they are small businesses just getting started or entrepreneurs looking for a way to create and test an MVP.  We co-designed and developed our website and had an absolute blast doing it."
     }
+  },
+  computed: {
+    path() {
+      return `${this.content.url}/projects/mortar-labs`;
+    },
+    title() {
+      return `${this.content.name} | Mortar Labs Project`;
+    }
+  },
+  head() {
+    return this.addCommonFrontMatter(this);
   }
 }
 </script>

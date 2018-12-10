@@ -53,6 +53,7 @@
 
 import Image from '~/components/Image'
 import Project from '~/assets/projects'
+import addCommonFrontMatter from '~/plugins/addCommonFrontMatter'
 
 export default {
   components : {
@@ -68,6 +69,17 @@ export default {
       summary: "This restaurant offers delicious, locally-sourced, made-from-scratch food.",
       description: "Located in Richland, Washington, this restaurant is currently known as Dovetail Joint Mobile Kitchen.  A long-time client asked for help getting a placeholder site up for her restuarant to advertise the mobile kitchen menu while she and her husband work on opening their brick-and-mortar location."
     }
+  },
+  computed: {
+    path() {
+      return `${this.content.url}/projects/dovetail-joint-restaurant`;
+    },
+    title() {
+      return `${this.content.name} | Dovetail Joint Restaurant Project`;
+    }
+  },
+  head() {
+    return this.addCommonFrontMatter(this);
   }
 }
 </script>

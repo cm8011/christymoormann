@@ -2,7 +2,7 @@
   <div>
     <section class="bg-white">
       <div class="content pt-3 pb-3">
-        <h2 class="center uppercase color-body-font-light pb-2">{{ title }}</h2>
+        <h2 class="center uppercase color-body-font-light pb-2">Clients &amp; Projects</h2>
         <div class="col-3">
           <div v-for="project in projects" :key="project.id" class="box center">
             <v-image :src="project.info.thumb" class="pb-1" :alt="`Screenshot of ${project.info.name}`" />
@@ -20,6 +20,7 @@
 <script>
 import Image from '~/components/Image'
 import Projects from '~/assets/projects'
+import addCommonFrontMatter from '~/plugins/addCommonFrontMatter'
 
 export default {
   components: {
@@ -28,9 +29,20 @@ export default {
   data () {
     return {
       projects: Projects,
-      title: "Clients & Projects"
+      description: "Here are some website projects I've worked on for small to medium-sized businesses covering industries such as real estate, hospitality, SaaS, and non-profit."
     }
-  }
+  },
+  computed: {
+    path() {
+      return `${this.content.url}/projects`;
+    },
+    title() {
+      return `${this.content.name} | Clients & Projects`;
+    }
+  },
+  head() {
+    return this.addCommonFrontMatter(this);
+  },
 }
 </script>
 

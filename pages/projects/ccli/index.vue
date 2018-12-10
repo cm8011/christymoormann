@@ -53,6 +53,7 @@
 
 import Image from '~/components/Image'
 import Project from '~/assets/projects'
+import addCommonFrontMatter from '~/plugins/addCommonFrontMatter'
 
 export default {
   components : {
@@ -68,6 +69,17 @@ export default {
       summary: "CCLI, or Christian Copyright Licensing International, provides information and resources for churches and copyright owners around the world.",
       description: "In order to expand services to a global audience, CCLI needed a way to allow customers to easily renew their annual subscription online.  As CCLI's full-time Senior UX Designer, I worked inside a small project team to design and produce a flow that allowed a targeted set of customers to view services that are due for renewal and pay online with a credit card."
     }
+  },
+  computed: {
+    path() {
+      return `${this.content.url}/projects/ccli`;
+    },
+    title() {
+      return `${this.content.name} | CCLI Store Project`;
+    }
+  },
+  head() {
+    return this.addCommonFrontMatter(this);
   }
 }
 </script>
