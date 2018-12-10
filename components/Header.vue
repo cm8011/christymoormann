@@ -1,7 +1,6 @@
 <template>
   <header>
     <div class="logo center pt-3">
-      <img src="/images/logo.png" />
       <h1 class="font-24 uppercase"><nuxt-link to="/">Christy Moormann</nuxt-link></h1>
     </div>
     <!-- <nav>
