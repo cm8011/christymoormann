@@ -70,10 +70,10 @@ header {
     grid-area: logo;
     .logo-mark {
       background-color: $white2;
-      border: 3px solid $pink;
+      border-bottom: 1px solid rgba($pink, 0.5);
       // border-radius: 6rem;
-      height: 3.5rem;
-      width: 3.5rem;
+      height: 3rem;
+      width: 3rem;
       display: flex;
       justify-content: center;
       margin: 0 auto 1rem;

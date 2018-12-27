@@ -41,7 +41,7 @@ export default {
     grid-template-columns: 1fr;
   }
   > div:first-child, > div:nth-child(3) {
-    background-color: $pink;
+    background-color: rgba($pink, 0.5);
     height: 1px;
     width: 100%;
   }
