@@ -1,7 +1,9 @@
 <template>
   <header>
     <div class="logo center pt-3">
-      <h1 class="font-24 uppercase"><nuxt-link to="/">Christy Moormann</nuxt-link></h1>
+      <nuxt-link class="logo-mark" to="/"><img src="/images/logo.svg" alt="Logo for Christy Moormann shows Christy's first and last initials." /></nuxt-link>
+      <h1 class="font-24 uppercase">Christy Moormann</h1>
+      <p class="font-18 color-brown mb-1">UX Design, Web Design &amp; Front-End Development</p>
     </div>
     <!-- <nav>
       <div class="desktop-menu hide-for-small">
@@ -26,10 +28,6 @@
         </div>
       </transition>
     </nav> -->
-    <div class="hero center">
-      <div class="font-18 pb-1">Over 8 years of experience in</div>
-      <h2 class="font-28">UX Design, Web Design &amp; Front-End Development</h2>
-    </div>
   </header>
 </template>
 
@@ -70,17 +68,20 @@ header {
   }
   .logo {
     grid-area: logo;
-    z-index: 2;
-    a, a:active {
-      color: $black;
-      text-decoration: none;
+    .logo-mark {
+      background-color: $pink;
+      border-radius: 6rem;
+      height: 3rem;
+      width: 3rem;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      align-items: center;
+      transition: $transition;
+      &:hover {
+        background: darken($pink, 5%);
+      }
     }
-  }
-  .hero {
-    align-self: center;
-    grid-area: hero;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 }
 

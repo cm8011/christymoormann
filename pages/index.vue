@@ -127,33 +127,7 @@ export default {
 
 
 <style lang="scss" scoped>
-@import '../assets/variables';
 
-.profile-image {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 40% 20% 40%;
-  @media screen and (max-width: $medium) {
-    grid-template-columns: 1fr;
-  }
-  > div:first-child, > div:nth-child(3) {
-    background-color: $pink;
-    height: 1px;
-    width: 100%;
-  }
-  > div:nth-child(2) {
-    margin: 0 auto;
-    text-align: center;
-    img {
-      border: 1px solid $pink;
-      padding: 1rem;
-      margin: 1rem auto;
-      @media screen and (max-width: $medium) {
-        padding: .25rem;
-      }
-    }
-  }
-}
 
 </style>
 

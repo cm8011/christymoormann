@@ -2,7 +2,7 @@
   <div class="body">
     <v-header></v-header>
     <main>
-      <final-cta></final-cta>
+      <profile-image></profile-image>
       <nuxt/>
     </main>
     <v-footer></v-footer>
@@ -12,13 +12,13 @@
 <script>
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
-import FinalCta from '~/components/FinalCta'
+import ProfileImage from '~/components/ProfileImage'
 
 export default {
   components: {
     'v-header': Header,
     'v-footer': Footer,
-    FinalCta
+    ProfileImage
   }
 }
 </script>
