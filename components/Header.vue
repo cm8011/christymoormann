@@ -69,17 +69,18 @@ header {
   .logo {
     grid-area: logo;
     .logo-mark {
-      background-color: $pink;
-      border-radius: 6rem;
-      height: 3rem;
-      width: 3rem;
+      background-color: $white2;
+      border: 3px solid $pink;
+      // border-radius: 6rem;
+      height: 3.5rem;
+      width: 3.5rem;
       display: flex;
       justify-content: center;
       margin: 0 auto 1rem;
       align-items: center;
       transition: $transition;
       &:hover {
-        background: darken($pink, 5%);
+        background: $pink;
       }
     }
   }
