@@ -56,6 +56,13 @@ module.exports = {
   },
   css: [
     '@/assets/index.scss'
+  ],
+  manifest: {
+    name: 'Christy Moormann',
+    lang: 'en'
+  },
+  modules: [
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-PFC9KXD' }]
   ]
 }
 

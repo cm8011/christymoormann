@@ -13,6 +13,9 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/google-tag-manager": "^2.1.1",
+    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/sitemap": "^0.2.0",
     "axios": "^0.18.0",
     "json-server": "^0.14.0",
     "nuxt": "^1.0.0"
