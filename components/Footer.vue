@@ -2,7 +2,7 @@
   <footer>
     <section>
       <div class="content center">
-        <p class="no-margin-bottom font-13">&copy;2018 Christy Moormann.  All rights reserved.</p>
+        <p class="no-margin-bottom font-13">&copy;2019 Christy Moormann.  All rights reserved.</p>
       </div>
     </section>
   </footer>
