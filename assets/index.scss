@@ -273,6 +273,7 @@ a.link, a.link:active, a.link:visited {
     &:not(:last-child) > span:last-child {
       border-right: 1px dotted $brown;
       margin-left: 16px;
+      min-height: 10px;
       height: 100%;
       width: 1px;
     }

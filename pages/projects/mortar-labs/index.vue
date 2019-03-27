@@ -67,7 +67,7 @@ export default {
       website: "https://mortar-labs.com",
       image: "/images/mortar-labs-large.png",
       summary: "Mortar Labs is a company that designs and develops websites and web applications.",
-      description: "My business partner joined forces for the greater good of the web application development industry and started Mortar Labs.  We seek to help people reach their maximum potential on the web, whether they are small businesses just getting started or entrepreneurs looking for a way to create and test an MVP.  We co-designed and developed our website and had an absolute blast doing it."
+      description: "My business partner and I joined forces for the greater good of the web application development industry and started Mortar Labs.  We seek to help people reach their maximum potential on the web, whether they are small businesses just getting started or entrepreneurs looking for a way to create and test an MVP.  We co-designed and developed our website and had an absolute blast doing it."
     }
   },
   computed: {
